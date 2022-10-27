@@ -22,6 +22,12 @@ export default {
             {path: '/about', name: 'About'},
             {path: '/network', name: 'NetworkAPI'},
             {path: '/speech', name: 'SpeechAPI'},
+            {path: '/geolocation', name: 'GeolocationAPI'},
+            {path: '/eyedropper', name: 'EyeDropperAPI'},
+            {path: '/clipboard', name: 'ClipboardAPI'},
+            {path: '/canvasapi', name: 'CanvasAPI'},
+            {path: '/chat', name: 'Chat'},
+
         ]
     }
   }

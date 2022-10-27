@@ -11,9 +11,28 @@
 </template>
 
 <script>
+import annyang from 'annyang';
 export default {
     mounted(){
         if(process.client){
+            if (annyang) {
+                console.log(annyang);
+                // Let's define a command.
+                var commands = {
+                    'hello': function() {
+
+                    },
+                    'cool beans': () => {
+                        console.log('cool beans');
+                    }   
+                };
+                
+                // Add our commands to annyang
+                annyang.addCommands(commands);
+                annyang.debug();
+                // Start listening.
+                annyang.start();
+            }
             let interval = setInterval( () => {
                 
                 this.voices = speechSynthesis.getVoices();
