@@ -19,7 +19,7 @@ export default {
     return {
         pages: [
             {path: '/', name: 'Home'},
-            {path: '/about', name: 'About'},
+            {path: '/databases', name: 'Databases'},
             {path: '/network', name: 'NetworkAPI'},
             {path: '/speech', name: 'SpeechAPI'},
             {path: '/geolocation', name: 'GeolocationAPI'},
